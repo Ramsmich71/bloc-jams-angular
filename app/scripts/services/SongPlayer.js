@@ -112,11 +112,8 @@
         setSong(song);
         playSong(song);
       }
-    }
+    };
 
-<<<<<<< HEAD
-  return SongPlayer;
-=======
     /**
    * @function SongPlayer.next
    * @desc determines current song index, then increases that index by one
@@ -136,7 +133,7 @@
    };
 
    return SongPlayer;
->>>>>>> assignment-8-services
+
   }
 
   angular
