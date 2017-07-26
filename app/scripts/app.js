@@ -3,7 +3,7 @@
     $locationProvider
       .html5Mode({
         enabled: true,
-        requiredBase: false
+        requireBase: false
       });
 
       $stateProvider
@@ -22,7 +22,7 @@
           controller: 'CollectionCtrl as collection',
           templateUrl: '/templates/collection.html'
         });
-  }
+  };
 
   angular
     .module('blocJams', ['ui.router'])
