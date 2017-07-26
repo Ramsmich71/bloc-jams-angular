@@ -44,6 +44,16 @@
     };
 
     /**
+    * @function stopSong
+    * @desc stops currently playing song
+    * @param {Object} song
+    */
+    var stopSong = function(song) {
+      currentBuzzObject.stop();
+      SongPlayer.currentSong.playing = null;
+    };
+
+    /**
     * @function getSongIndex
     * @desc retrieves the index of song
     * @param {Object} song
@@ -104,7 +114,29 @@
       }
     }
 
+<<<<<<< HEAD
   return SongPlayer;
+=======
+    /**
+   * @function SongPlayer.next
+   * @desc determines current song index, then increases that index by one
+   * @param {Object} song
+   */
+   SongPlayer.next = function() {
+     var currentSongIndex = getSongIndex(SongPlayer.currentSong);
+     currentSongIndex++;
+
+     if (currentSongIndex >= currentAlbum.songs.length) {
+       stopSong(song);
+     } else {
+       var song = currentAlbum.songs[currentSongIndex];
+       setSong(song);
+       playSong(song);
+     }
+   };
+
+   return SongPlayer;
+>>>>>>> assignment-8-services
   }
 
   angular
