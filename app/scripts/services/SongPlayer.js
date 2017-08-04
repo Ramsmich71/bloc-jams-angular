@@ -80,6 +80,8 @@
     */
     SongPlayer.currentTime = null;
 
+
+
     /**
     * @function SongPlayer.play
     * @desc plays sellected song
@@ -154,6 +156,8 @@
        currentBuzzObject.setTime(time);
      }
    };
+
+
 
    return SongPlayer;
 
