@@ -56,7 +56,7 @@
     */
     var stopSong = function(song) {
       currentBuzzObject.stop();
-      SongPlayer.currentSong.playing = null;
+      song.playing = null;
     };
 
     /**

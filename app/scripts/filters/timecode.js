@@ -21,9 +21,9 @@
 
       return output;
     };
-  }
+  };
 
   angular
     .module('blocJams')
-    .filter('timecode', timecode)
+    .filter('timecode', timecode);
 })();
